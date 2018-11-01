@@ -47,7 +47,7 @@ class SignupController extends Controller
           'guardianLast' => 'required',
           'guardianEmail' => 'required|email',
           'guardianNumber' => 'required|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
-          'email' => 'required|email',
+          'email' => 'nullable|email',
           'shirts' => 'required',
           'allergies' => 'nullable',
           'doc' => 'nullable'
