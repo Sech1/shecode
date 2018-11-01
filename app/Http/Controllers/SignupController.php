@@ -43,13 +43,13 @@ class SignupController extends Controller
         $this->validate($request, [
           'name' => 'required',
           'last' => 'required',
-          'guardianFirst' => 'nullable',
-          'guardianLast' => 'nullable',
-          'guardianEmail' => 'nullable|email',
-          'guardianNumber' => 'nullable|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
+          'guardianFirst' => 'required',
+          'guardianLast' => 'required',
+          'guardianEmail' => 'required|email',
+          'guardianNumber' => 'required|regex:/^(\+\d{1,2}\s)?\(?\d{3}\)?[\s.-]?\d{3}[\s.-]?\d{4}$/',
           'email' => 'required|email',
           'shirts' => 'required',
-          'allergies' => 'required',
+          'allergies' => 'nullable',
           'doc' => 'nullable'
         ]);
         // $path = $request->file('doc')->store('documents');
@@ -67,6 +67,7 @@ class SignupController extends Controller
         $guardianLastVar = $request->input('guardianLast') ?? 'No Parent or Guardian Entered';
         $guardianEmailVar = $request->input('guardianEmail') ?? 'No Parent or Guardian Entered';
         $guardianNumberVar = $request->input('guardianNumber') ?? 'No Parent or Guardian Entered';
+        $allergyVar = $request->input('allergies') ?? 'No Allergies Entered';
 
         Signup::create([
           'first' => $request->name,

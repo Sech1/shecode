@@ -9,11 +9,11 @@
     <p>SheCode will be on December 1st 2018, starting at 10:00 am and ending at 2:30 pm in the <a href="https://goo.gl/maps/y6jrS4WREQ72">SIUE Engineering
       Building</a>.
       All participants will need a permission form signed by a parent or guardian at the start of SheCode.</p>
-      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf" target="_blank">Download Minor Permission Form</a>
+      <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf" target="_blank">Waiver for participant under 18-years of age</a>
       <br>
       <br>
-      <p>If you or your child is over the age of 18, this form must be filled out and brought with you or uploaded below.</p>
-        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Download Adult Permission Form</a>
+      <p>If the participant is over 18 years of age, this form must be filled out and brought with you or uploaded below.</p>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Waiver for participant over 18-years of age</a>
     </div>
   </div>
 </div>
@@ -65,7 +65,7 @@
       <div class="field">
         <label class="label">Parent / Guardian First Name</label>
         <div class="control">
-          <input id="guardianFirst" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()">
+          <input id="guardianFirst" class="input" type="text" placeholder="Parent or Guardian First Name" name="guardianFirst" onchange="hideErrors()" required>
         </div>
       </div>
       <!-- END Guardian First Name Field -->
@@ -74,28 +74,16 @@
       <div class="field">
         <label class="label">Parent / Guardian Last Name</label>
         <div class="control">
-          <input id="guardianLast" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()">
+          <input id="guardianLast" class="input" type="text" placeholder="Parent or Guardian Last Name" name="guardianLast" onchange="hideErrors()" required>
         </div>
       </div>
       <!-- END Guardian Last Name Field -->
-
-      <!-- Guardian Email Field -->
-      <div class="field">
-        <label class="label">Parent / Guardian Email</label>
-        <p class="control has-icons-left">
-          <input id="guardianEmail" class="input" type="email" placeholder="Parent or Guardian Email" name="guardianEmail" onchange="hideErrors()">
-          <span class="icon is-small is-left">
-        <i class="fa fa-envelope"></i>
-      </span>
-        </p>
-      </div>
-      <!-- END Guardian Email Field -->
 
       <!-- Guardian Phone Number -->
       <div class="field">
         <label class="label">Parent / Guardian Phone Number</label>
         <p class="control has-icons-left">
-          <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()">
+          <input id="guardianNumber" class="input" type="tel" placeholder="555-555-5555" name="guardianNumber" onchange="hideErrors()" required>
           <span class="icon is-small is-left">
         <i class="fa fa-phone" aria-hidden="true"></i>
       </span>
@@ -105,7 +93,7 @@
 
       <!-- Allergies Field -->
       <div class="field">
-        <label class="label">Allergies / Food Preferences</label>
+        <label class="label">Food Allergies</label>
         <div class="control">
           <textarea id="allergies" class="textarea" rows="5" placeholder="List All Allergies" name="allergies" onchange="hideErrors()"></textarea>
         </div>
@@ -132,7 +120,7 @@
 
       <!-- Permission Form Field -->
       <div class="field">
-        <label class="label">Permission Form</label>
+        <label class="label">Upload completed waiver form (optional)”</label>
         <div class="file has-name">
           <label class="file-label">
             <input id="file" class="file-input" type="file" onchange="getFileName(this.files)" name="doc">
