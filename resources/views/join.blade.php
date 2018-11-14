@@ -120,7 +120,9 @@
 
       <!-- Permission Form Field -->
       <div class="field">
-        <label class="label">Upload completed waiver form (optional)”</label>
+        <label class="label">Upload completed waiver form (optional)</label>
+        <label class="label">Please use .pdf or .doc format files</label>
+        <label class="label">Images should be sent to <a href="mailto:she-code@siue.edu">she-code@siue.edu</a>
         <div class="file has-name">
           <label class="file-label">
             <input id="file" class="file-input" type="file" onchange="getFileName(this.files)" name="doc">
