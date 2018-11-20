@@ -21,7 +21,6 @@ SheCode
 
 @section('content')
 <div class="section">
-  <div class="columns">
     <div class="column">
       <h1 class="title has-text-centered">Sorry, registion is now closed!</h1>
       <div class="content is-medium">
@@ -36,7 +35,7 @@ SheCode
         <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Waiver for participant over 18-years of age</a>
       </div>
     </div>
-  </div>
+
 
 
 <div class="section">
