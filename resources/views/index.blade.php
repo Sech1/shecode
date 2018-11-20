@@ -21,7 +21,7 @@ SheCode
 
 @section('content')
 <div class="section">
-    <div class="column">
+    <div class="container has-text-centered">
       <h1 class="title has-text-centered">Sorry, registion is now closed!</h1>
       <div class="content is-medium">
         If you still need a copy of the permission form the can be found:
