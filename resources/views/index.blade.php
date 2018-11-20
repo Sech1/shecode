@@ -23,6 +23,25 @@ SheCode
 <div class="section">
   <div class="columns">
     <div class="column">
+      <h1 class="title has-text-centered">Sorry, registion is now closed!</h1>
+      <div class="content is-medium">
+        If you still need a copy of the permission form the can be found:
+        <br>
+        <br>
+        <b>Waiver for participant under 18-years of age: </b><br>
+        <a class="has-text-centered" href="/2018SheCodeMinorForm.pdf" target="_blank">Waiver for participant under 18-years of age</a>
+        <br>
+        <br>
+        <b>If the participant is over 18 years of age: </b><br>
+        <a class="has-text-centered" href="/2018SheCodeAdultForm.pdf" target="_blank">Waiver for participant over 18-years of age</a>
+      </div>
+    </div>
+  </div>
+
+
+<div class="section">
+  <div class="columns">
+    <div class="column">
       <h1 class="title has-text-centered">What is SheCode?</h1>
       <div class="content is-medium">
 The field of Computer Science is an ever-growing field with growing numbers and variety of career opportunities. Even careers not normally associated with computing are increasingly making use of computing and technology. For a variety of reasons, women tend to participate in the study of computing and computing careers less than men.
